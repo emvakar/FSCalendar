@@ -10,6 +10,11 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "FSCalendar", dependencies: [], path: "FSCalendar", publicHeadersPath: "FSCalendar"),
+        .target(
+            name: "FSCalendar",
+            dependencies: [],
+            path: "FSCalendar",
+            publicHeadersPath: "FSCalendar",
+            cxxSettings: [.headerSearchPath("FSCalendar")]),
     ]
 )
